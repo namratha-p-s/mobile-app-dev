@@ -2,20 +2,29 @@
 //  ContentView.swift
 //  mad
 //
-//  Created by Narmada on 8/31/23.
+//  Created by Namratha on 8/31/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            Color(red:0, green:0, blue: 0)
+                .ignoresSafeArea()
+            
+            VStack {
+                Image("world")
+                    .resizable()
+                    .cornerRadius(15)
+                    .aspectRatio(contentMode: .fit)
+                    .padding()
+                Text("Hello World!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+            }
         }
-        .padding()
     }
 }
 
