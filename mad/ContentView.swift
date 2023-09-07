@@ -52,15 +52,6 @@ struct ContentView: View {
     }
 }
 
-struct ToggleView: View {
-    @Binding var isRotationEnabled: Bool
-    
-    var body: some View {
-        Toggle("Rotate Earth", isOn:$isRotationEnabled)
-            .padding()
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
